@@ -1,8 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'sans-serif' !important;
+}
+
+.nab-tabs > li > a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
 .Collage {
 
     /* define how much padding you want in between your images */
-    padding:10px;
-
+    padding: 20px;
+    width: 65%;
+    margin: 0 auto;
 }
 
 .Collage img {
@@ -12,5 +25,14 @@
 
     /* hide the images until the plugin has run. the plugin will reveal the images*/
     opacity:0;
+
+}
+
+#filterButton {
+    min-width: 120px;
+}
+
+#container {
+    width: 100%;
 
 }
