@@ -4,7 +4,9 @@ portfolioApp.controller('filterListCtrl', ['$scope', function ($scope) {
     $scope.filters = ['Everything', 'Branding', 'Digital', 'Print', 'Direct Response'];
 
     $scope.filterItems = function(filter) {
-        console.log($scope.$parent.projects);
+        
+        $scope.$parent.projects
+
         return ;
     }
 
