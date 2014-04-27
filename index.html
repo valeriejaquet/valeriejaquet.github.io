@@ -6,7 +6,7 @@
     <title>Valerie Jaquet - Marketing &amp; Media Sales Professional</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
     <link type="text/css" href="./css/site.css" rel="stylesheet" />
     <link type="text/css" href="./css/transitions.css" rel="stylesheet" />
@@ -19,69 +19,38 @@
         </div>
         <div class="row">
             <div class="col-md-2" style="text-align: right;" id="leftCol">
-              
                 <ul class="nav nav-stacked " id="sidebar"  ng-controller="filterListCtrl">
                  <li ng-repeat="filter in filters">
                           <a ng-click="filterItems(filter)">{{filter}}</a>
                     </li>
                 </ul>
-              
             </div>  
             <div class="col-md-10">
+                <div ng-controller="ModalDemoCtrl">
+                    <script type="text/ng-template" id="myModalContent.html">
+                        <div class="modal-header">
+                            <h3>I'm a modal!</h3>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li ng-repeat="item in items">
+                                    <a ng-click="selected.item = item">{{ item }}</a>
+                                </li>
+                            </ul>
+                            Selected: <b>{{ selected.item }}</b>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" ng-click="ok()">OK</button>
+                            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+                        </div>
+                    </script>
 
-<!-- 
-        <nav class="navbar navbar-inverse" role="navigation" ng-controller="filterListCtrl">
-            <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              </div>
-                <div class="collapse navbar-collapse center-pills" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav ">
-                    <li ng-repeat="filter in filters">
-                          <a ng-click="filterItems(filter)">{{filter}}</a>
-                    </li>
-                  </ul>
+                    <div class="Collage">
+                        <img ng-repeat="project in projects" ng-src="{{ project.thumbnail }} " id="{{project.name}}_thumb" ng-click="open()" />
+                    </div>
                 </div>
-
-                
-            </div>
-        </nav> -->
-
-        <div ng-controller="ModalDemoCtrl">
-
-            <script type="text/ng-template" id="myModalContent.html">
-                <div class="modal-header">
-                    <h3>I'm a modal!</h3>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li ng-repeat="item in items">
-                            <a ng-click="selected.item = item">{{ item }}</a>
-                        </li>
-                    </ul>
-                    Selected: <b>{{ selected.item }}</b>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary" ng-click="ok()">OK</button>
-                    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-                </div>
-            </script>
-
-            <div class="Collage">
-                <img ng-repeat="project in projects" ng-src="{{ project.thumbnail }} " id="{{project.name}}_thumb" ng-click="open()" />
-            </div>
-
-            <button class="btn btn-default" ng-click="open()">Open me!</button>
-        </div>
             </div>
         </div>
-
-
     </div>
     <script src="./js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="./js/jquery.collagePlus.min.js" type="text/javascript" charset="utf-8"></script>
@@ -93,18 +62,22 @@
     <script src="./js/controllers.js"></script>
     <script src="./js/services.js"></script>
     <script type="text/javascript">
-        $(window).load(function () {
-            $('.Collage').collagePlus(
-                {
-                    'effect' : 'effect-2',
-                    'allowPartialLastRow' : true
-                }
-            );
-        });
+
+    // Images grid
+    $(window).load(function () {
+        $('.Collage').collagePlus(
+            {
+                'effect' : 'effect-2',
+                'allowPartialLastRow' : true
+            }
+        );
+    });
+
+    // Webfont
     WebFontConfig = {
         google: { families: [ 'Open+Sans::latin' ] }
-      };
-      (function() {
+    };
+    (function() {
         var wf = document.createElement('script');
         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
           '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
@@ -112,7 +85,16 @@
         wf.async = 'true';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
-      })();
+    })();
+
+    // sticky side nav
+    $('#sidebar').affix({offset: {top: 120,}});
+    var $body = $(document.body);
+    var navHeight = $('.navbar').outerHeight(true) + 10;
+    $body.scrollspy({
+        target: '#leftCol',
+        offset: navHeight
+    });
     </script>
 </body>
 </html>

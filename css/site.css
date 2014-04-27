@@ -4,6 +4,11 @@ body {
     font-family: 'Open Sans', 'sans-serif';
 }
 
+a {
+    color: #181818;
+    cursor: pointer;
+}
+
 h1 {
     font-size: 4.5em;
     font-family: 'vj', 'Open Sans', 'sans-serif' !important;,
@@ -14,8 +19,19 @@ h1 {
     src: url('./vj.otf'); /*URL to font*/
 }
 
-.navbar-inverse {
 
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
 }
 
 .nab-tabs > li > a {
