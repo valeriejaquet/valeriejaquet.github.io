@@ -1,7 +1,21 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', 'sans-serif' !important;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+h1 {
+    font-size: 4.5em;
+    font-family: 'vj', 'Open Sans', 'sans-serif' !important;,
+}
+
+@font-face {
+    font-family: 'vj'; /*a name to be used later*/
+    src: url('./vj.otf'); /*URL to font*/
+}
+
+.navbar-inverse {
+
 }
 
 .nab-tabs > li > a {

@@ -31,7 +31,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'bmw',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Agency - BMW',
         'categories': ['Branding', 'Print'],
         'thumbnail': './media/thumbs/bmw.jpg',
         'images': ['./media/BMW/BMW cover1.jpg', './media/BMW/BMW cover2.jpg', './media/BMW/BMW DPS.jpg', './media/BMW/BMWpage4.jpg', './media/BMW/BMW wrap.jpg'],
@@ -39,7 +39,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'chambers',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Direct Client – Chambers Cellars',
         'categories': ['Direct Response', 'Print'],
         'thumbnail': './media/thumbs/chambers.jpg',
         'images': ['./media/Chambers Cellars/Chambers catalogues.jpg'],
@@ -47,7 +47,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'chanel',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Agency – Chanel',
         'categories': ['Branding', 'Print'],
         'thumbnail': './media/thumbs/chanel.jpg',
         'images': ['./media/Chanel/ChanelWrap.jpg'],
@@ -55,7 +55,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'dior',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Agency – Christian Dior',
         'categories': ['Branding', 'Print'],
         'thumbnail': './media/thumbs/dior.jpg',
         'images': ['./media/Dior/DiorWrap.jpg'],
@@ -63,7 +63,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'dnsw',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Direct Client – Destination NSW',
         'categories': ['Print'],
         'thumbnail': './media/thumbs/dnsw.jpg',
         'images': ['./media/Destination NSW/DSNW front.jpg', './media/Destination NSW/DSNW back.jpg'],
@@ -72,7 +72,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
 
     {
         'name': 'mastercard',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Agency – Mastercard',
         'categories': ['Branding', 'Print'],
         'thumbnail': './media/thumbs/mastercard.jpg',
         'images': ['./media/Mastercard/mastercardWrap.jpg', './media/Mastercard/stunt1.jpg', './media/Mastercard/stunt2.jpg'],
@@ -88,7 +88,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'ubank_wrap',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Agency – UBank',
         'categories': ['Direct Response', 'Print'],
         'thumbnail': './media/thumbs/ubank_wrap.jpg',
         'images': ['./media/Ubank/Ubank wrap.jpg'],
@@ -96,7 +96,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'theiconic',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Direct Client – The Iconic',
         'categories': ['Direct Response', 'Print'],
         'thumbnail': './media/thumbs/theiconic.jpg',
         'images': ['./media/The Iconic/Theiconic.jpg'],
@@ -104,7 +104,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'chambers_edm',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Direct Client – Chambers Cellars',
         'categories': ['Digital'],
         'thumbnail': './media/thumbs/chambers_edm.jpg',
         'images': ['./media/Chambers Cellars/Chambers edm.jpg'],
@@ -112,7 +112,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'thinktank',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Proactivity - THINK TANK Initiative',
         'categories': ['Print'],
         'thumbnail': './media/thumbs/thinktank.jpg',
         'images': ['./media/ThinkTank/thinktank.jpg'],
@@ -120,7 +120,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'ubank_flyer',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Agency – UBank',
         'categories': ['Print', 'Direct Response'],
         'thumbnail': './media/thumbs/ubank_flyer.jpg',
         'images': ['/media/Ubank/Ubank flyer back.jpg', './media/Ubank/Ubank flyer front.jpg'],
@@ -128,7 +128,7 @@ portfolioApp.controller('projectListCtrl', function($scope) {
     },
     {
         'name': 'uts',
-        'title': 'Working with Direct Client – GoCatch',
+        'title': 'Working with Direct Client – UTS',
         'categories': ['Print', 'Branding', 'Digital'],
         'thumbnail': './media/thumbs/uts.jpg',
         'images': ['./media/UTS/UTS 1.jpg', './media/UTS/UTS 2.jpg'],
