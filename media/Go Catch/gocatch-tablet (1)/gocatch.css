@@ -1,0 +1,32 @@
+.links > *:nth-child(3) {
+    position: relative;
+    top: 1px;
+}
+
+.links > * {
+    padding-right: 2px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+/* Landscape */
+#landscape .links {
+    position: relative;
+    top: 631px;
+    left: 102px;
+}
+
+/* Portrait */
+#portrait .links {
+    position: relative;
+    top: 299px;
+    left: 51px;
+    width: 123px;
+}
+
+#portrait .links > * {
+    display: block;
+    margin-bottom: 6px;
+}
