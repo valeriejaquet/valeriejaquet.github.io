@@ -23,21 +23,21 @@ portfolioApp.controller('projectListCtrl', function($scope) {
         'description': 'G-Star Raw Fall-Winter online campaign on TheVine.com.au website Homepage take over Homepage MREC &amp; half page ad Revenue generated: $15,000'
     },
     {
-        'name': 'gocatch',
-        'title': 'Working with Direct Client – GoCatch',
-        'categories': ['Direct Response', 'Digital'],
-        'position': [0, 0, 0],
-        'thumbnail': './media/thumbs/gocatch.jpg',
-        'images': ['./media/Go Catch/gocatch ipad.jpg', './media/Go Catch/gocatch leader.jpg', './media/Go Catch/gocatch mrec.jpg'],
-        'description': 'iPad and online campaign in the Canberra Times in September and October 2013 iPad full page ad in September received 28,133 impressions, 192 clicks and a click through rate of 0.682%. iPad full page ad in October generated 12,800 impressions, 77 clicks and a click through rate of 0.602%. Homepage MREC &amp; guttering on Canberratimes.com.au tracked really well with a click through rate of 0.38% compared to an industry average of 0.02%. Revenue generated: $10,000 Results: Successful iPad and online campaign with incredibly high response rates.'
-    },
-    {
         'name': 'bmw',
         'title': 'Working with Agency - BMW',
         'categories': ['Branding', 'Print'],
         'position': [0, 0, 0, 0, 0],
         'thumbnail': './media/thumbs/bmw.jpg',
         'images': ['./media/BMW/BMW cover1.jpg', './media/BMW/BMW cover2.jpg', './media/BMW/BMW DPS.jpg', './media/BMW/BMWpage4.jpg', './media/BMW/BMW wrap.jpg'],
+        'description': 'iPad and online campaign in the Canberra Times in September and October 2013 iPad full page ad in September received 28,133 impressions, 192 clicks and a click through rate of 0.682%. iPad full page ad in October generated 12,800 impressions, 77 clicks and a click through rate of 0.602%. Homepage MREC &amp; guttering on Canberratimes.com.au tracked really well with a click through rate of 0.38% compared to an industry average of 0.02%. Revenue generated: $10,000 Results: Successful iPad and online campaign with incredibly high response rates.'
+    },
+    {
+        'name': 'gocatch',
+        'title': 'Working with Direct Client – GoCatch',
+        'categories': ['Direct Response', 'Digital'],
+        'position': [0, 0, 0],
+        'thumbnail': './media/thumbs/gocatch.jpg',
+        'images': ['./media/Go Catch/gocatch ipad.jpg', './media/Go Catch/gocatch leader.jpg', './media/Go Catch/gocatch mrec.jpg'],
         'description': 'iPad and online campaign in the Canberra Times in September and October 2013 iPad full page ad in September received 28,133 impressions, 192 clicks and a click through rate of 0.682%. iPad full page ad in October generated 12,800 impressions, 77 clicks and a click through rate of 0.602%. Homepage MREC &amp; guttering on Canberratimes.com.au tracked really well with a click through rate of 0.38% compared to an industry average of 0.02%. Revenue generated: $10,000 Results: Successful iPad and online campaign with incredibly high response rates.'
     },
     {
