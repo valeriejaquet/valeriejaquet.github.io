@@ -75,6 +75,8 @@ h1 {
     /* ensures padding at the bottom of the image is correct */
     vertical-align:bottom;
 
+    max-height: 380px;
+
     /* hide the images until the plugin has run. the plugin will reveal the images*/
     opacity:0;
 
