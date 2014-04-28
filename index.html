@@ -26,17 +26,12 @@
                         <i id="mailme"></i>
                     </ul>
                 </div>
-
             </div>
-            
-        
         </div>
-
         <div class="row">
             <div class="col-md-2" style="text-align: right;" id="leftCol">
                 <ul class="nav nav-stacked " id="sidebar"  ng-controller="filterListCtrl">
                     <li ng-repeat="filter in filters">
-                          <!-- <a ng-click="updateCategory(filter)">{{filter}}</a> -->
                         <a ng-click="updateCategory(filter)" ng-href="#{{filter}}">{{filter}}</a>
                     </li>
                 </ul>
@@ -64,26 +59,6 @@
                 
                     </script>
                 </script>
-
-                <!-- <div ng-controller="ModalDemoCtrl"> -->
-
-      <!--               <script type="text/ng-template" id="myModalContent.html">
-                        <div class="modal-header">
-                            <h3>{{ title }}</h3>
-                        </div>
-                        <div class="modal-body">
-                            <div btf-markdown="markdown">
-                                {{ descr }}
-                            </div>
-                          <img ng-repeat="img in imgBottom" ng-src="{{ img }}" />
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary" ng-click="ok()">OK</button>
-                            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-                        </div>
-                    </script> -->
-
-    
             </div>
         </div>
     </div>

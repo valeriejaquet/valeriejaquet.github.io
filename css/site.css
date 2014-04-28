@@ -34,7 +34,21 @@ h1 {
   }
 }
 
-.nab-tabs > li > a {
+@media  only screen and (max-width: 720px) and (orientation: portrait) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:150px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:100px;
+  }
+}
+
+.nav-tabs > li > a {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -73,5 +87,6 @@ h1 {
   width: 90%;
 }
 
-.contact {font-size: 3em; padding-top: 25px; margin:0 auto; color: #333;}
+.contact {font-size: 3.2em; padding-top: 25px; margin:0 auto; color: #333;}
+.contact a {color: #333 !important;}
 .contact a:hover{text-decoration: none; color: #fff;}
