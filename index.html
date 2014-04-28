@@ -46,7 +46,7 @@
                     </script>
 
                     <div class="Collage">
-                        <img ng-repeat="project in projects" ng-src="{{ project.thumbnail }} " id="{{project.name}}_thumb" ng-click="open()" />
+                        <img ng-repeat="project in projects | orderBy:selectedCategory.index | projectCategories:selectedCategory.name" ng-src="{{ project.thumbnail }} " id="{{project.name}}_thumb" ng-click="open()" />
                     </div>
                 </div>
             </div>
