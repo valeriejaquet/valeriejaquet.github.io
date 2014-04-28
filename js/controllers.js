@@ -1,4 +1,45 @@
-var portfolioApp = angular.module('portfolioApp', ['ui.bootstrap']);
+var portfolioApp = angular.module('portfolioApp', ['ui.bootstrap', 'ngRoute']);
+
+portfolioApp.config(function($routeProvider) {
+    $routeProvider
+
+        .when('/', {
+            templateUrl : 'filter.html',
+            controller  : 'everythingController'
+        })
+
+        .when('/Everything', {
+            templateUrl : 'filter.html',
+            controller  : 'everythingController'
+        })
+
+        .when('/Digital', {
+            templateUrl : 'filter.html',
+            controller  : 'everythingController'
+        })
+
+        .when('/Print', {
+            templateUrl : 'filter.html',
+            controller  : 'everythingController'
+        })
+        
+        .when('/Branding', {
+            templateUrl : 'filter.html',
+            controller  : 'everythingController'
+        })
+
+        .when('/Direct Response', {
+            templateUrl : 'filter.html',
+            controller  : 'everythingController'
+        });      
+});
+
+// create the controller and inject Angular's $scope
+portfolioApp.controller('everythingController', function($scope) {
+    // create a message to display in our view
+    $scope.message = 'Everything!';
+});
+
 
 portfolioApp.filter('projectCategories', function(){
     return function(categories, category) {
@@ -21,9 +62,51 @@ portfolioApp.controller('filterListCtrl', ['$scope', function ($scope) {
     $scope.filters = ['Everything', 'Branding', 'Digital', 'Print', 'Direct Response'];
 
     $scope.updateCategory = function(filterName){
+        
+
         $scope.$parent.selectedCategory = {name: filterName};
+
+
     }
 }])
+
+
+var ModalDemoCtrl = function ($scope, $modal, $log) {
+
+  $scope.open = function (project) {
+    $project = project;
+    var modalInstance = $modal.open({
+      templateUrl: 'myModalContent.html',
+      controller: ModalInstanceCtrl,
+      resolve: {
+        project: function() { return project },
+        // descr: function() { return $project.descr },
+        // imgBottom: function() {},
+        // imgSide: function() {}
+      }
+    });
+  };
+};
+
+// Please note that $modalInstance represents a modal window (instance) dependency.
+// It is not the same as the $modal service used above.
+
+var ModalInstanceCtrl = function ($scope, $modalInstance, project) {
+
+  $scope.title = project.title;
+  $scope.descr = project.description;
+  $scope.imgSide = project.images;
+  $scope.imgBottom = project.images;
+
+  $scope.ok = function () {
+    $modalInstance.close();
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+};
+
 
 portfolioApp.controller('projectListCtrl', function($scope) {
 
