@@ -63,26 +63,22 @@ h1 {
     width: 100%;
 
 }
-
 .Collage {
-    padding-top:30px;
+
     /* define how much padding you want in between your images */
     width: 100%;
 }
 
-
 .Collage img {
 
+    padding: 2.5px;
     /* ensures padding at the bottom of the image is correct */
     vertical-align:bottom;
 
     /* hide the images until the plugin has run. the plugin will reveal the images*/
     opacity:0;
-    padding: 5px;
 
-    max-height: 350px;
 }
-
 .header {background-color: #222; margin: 0 auto; height: 120px;}
 
 .modal-dialog {
