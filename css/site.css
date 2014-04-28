@@ -65,7 +65,7 @@ h1 {
 }
 
 .Collage {
-
+    padding-top:30px;
     /* define how much padding you want in between your images */
     width: 90%;
 }
@@ -82,6 +82,8 @@ h1 {
 
     max-height: 400px;
 }
+
+.header {background-color: #222; margin: 0 auto; height: 120px;}
 
 .modal-dialog {
   width: 90%;
