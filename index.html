@@ -46,6 +46,8 @@
                         <img 
                         ng-repeat="project in projects | orderBy:selectedCategory.index | projectCategories:selectedCategory.name" 
                         ng-src="{{ project.thumbnail }}" 
+                        width="{{ project.thumb_size[0] }}"
+                        height="{{ project.thumb_size[1] }}"
                         id="{{project.name}}_thumb" 
                         />
                     </div>
@@ -54,7 +56,7 @@
 
                     $('.Collage').collagePlus({
                         'effect': 'effect-2',
-                        'allowPartialLastRow': true
+                        'allowPartialLastRow': false
                     });
                 
                     </script>
