@@ -32,6 +32,8 @@ var ModalInstanceCtrl = function ($scope, $modalInstance, items) {
     item: $scope.items[0]
   };
 
+  $scope.title = 'test';
+
   $scope.ok = function () {
     $modalInstance.close($scope.selected.item);
   };
