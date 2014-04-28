@@ -67,7 +67,7 @@ h1 {
 .Collage {
     padding-top:30px;
     /* define how much padding you want in between your images */
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -80,6 +80,7 @@ h1 {
     opacity:0;
     padding: 5px;
 
+    max-height: 350px;
 }
 
 .header {background-color: #222; margin: 0 auto; height: 120px;}
