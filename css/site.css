@@ -86,7 +86,16 @@ h1 {
 .modal-dialog {
   width: 90%;
 }
+@media (min-width: 979px) {
+    .contact {font-size: 3.2em; padding-top: 25px; margin:0 auto; color: #333;}
+    .contact a {color: #333 !important;}
+    .contact a:hover{text-decoration: none; color: #fff;}
+}
 
-.contact {font-size: 3.2em; padding-top: 25px; margin:0 auto; color: #333;}
-.contact a {color: #333 !important;}
-.contact a:hover{text-decoration: none; color: #fff;}
+@media  only screen and (max-width: 720px) and (orientation: portrait) {
+
+    .contact {font-size: 3.2em; padding-top: 25px; margin:0 auto; color: #333; display: block; clear:both;}
+    .contact a {color: #333 !important;}
+    .contact a:hover{text-decoration: none; color: #fff;}  
+
+}
