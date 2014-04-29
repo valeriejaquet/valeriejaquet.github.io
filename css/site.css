@@ -100,4 +100,5 @@ h1 {
     .contact_mobile a {color: #636363; margin-left:10px; font-size: .8em;}
     .contact_mobile a:hover{text-decoration: none; color: #fff;}
     .nav_mobile {text-align: left;}
+    #sidebar {display: none;}
 }
