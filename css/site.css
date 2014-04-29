@@ -97,9 +97,9 @@ h1 {
 
 @media  only screen and (max-width: 978px) and (orientation: portrait) {
     .contact {display: none;}
-    .contact_mobile {font-size: 4.2em; padding-top: 10px; color: #ccc; text-align: center;}
-    .contact_mobile li {margin-left:10px;}
-    .contact_mobile a {color: #636363; margin-left:10px; font-size: .8em;}
+    .contact_mobile {font-size: 4em; line-height: .4em; color: #ccc; text-align: center; padding-top: 5px; margin-bottom: 3px; float:left;}
+    .contact_mobile li {margin-left:10px; padding-bottom:0;}
+    .contact_mobile a {color: #636363;  font-size: .8em;}
     .contact_mobile a:hover{text-decoration: none; color: #fff;}
     .nav_mobile {text-align: left;}
     #sidebar {display: none;}
