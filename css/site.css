@@ -66,12 +66,14 @@ h1 {
 .Collage {
 
     /* define how much padding you want in between your images */
-    width: 100%;
+    padding:10px;
+    margin: 0 auto;
 }
 
 .Collage img {
-
-    padding: 2.5px;
+    margin: 0 auto;
+    max-width: 250px;
+    max-height: 350px;
     /* ensures padding at the bottom of the image is correct */
     vertical-align:bottom;
 
@@ -93,7 +95,7 @@ h1 {
     .nav_mobile {display: none;}
 }
 
-@media  only screen and (max-width: 720px) and (orientation: portrait) {
+@media  only screen and (max-width: 978px) and (orientation: portrait) {
     .contact {display: none;}
     .contact_mobile {font-size: 4.2em; padding-top: 10px; color: #ccc; text-align: center;}
     .contact_mobile li {margin-left:10px;}
@@ -103,3 +105,8 @@ h1 {
     #sidebar {display: none;}
     .Collage {text-align: center;}
 }
+
+.nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
