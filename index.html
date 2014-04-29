@@ -16,17 +16,7 @@
 <body ng-controller="projectListCtrl">
     <div id="container" class="container">
         <div class="header">
-           <nav class="navbar navbar-default nav_mobile" role="navigation">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav" ng-controller="filterListCtrl">
-                                <li ng-repeat="filter in filters">
-                                    <a ng-click="updateCategory(filter)" ng-href="#{{filter}}">{{filter}}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-7"><h1 style="padding-top: 25px; color: #fff; margin: 0 auto; text-align:center;">valerie jaquet</h1></div>    
@@ -37,14 +27,22 @@
                         <i class="fa fa-phone-square"><a href="tel:+61400371671">+61400371671</a></i>
                         <i id="mailme" class="fa fa-envelope"></i>
                     </ul>
-
-                        <ul class="contact_mobile">
-
-                                <i><a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/vjaquet"></a></i>
-                                <i><a class="fa fa-phone-square" href="tel:+61400371671"></a></i>
-                                <i id="mailme_mobile"></i>
-                        </ul>
-                    
+                    <ul class="contact_mobile">
+                        <i><a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/vjaquet"></a></i>
+                        <i><a class="fa fa-phone-square" href="tel:+61400371671"></a></i>
+                        <i id="mailme_mobile"></i>
+                    </ul>
+                   <nav class="navbar navbar-default nav_mobile" role="navigation">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav" ng-controller="filterListCtrl">
+                                    <li ng-repeat="filter in filters">
+                                        <a ng-click="updateCategory(filter)" ng-href="#{{filter}}">{{filter}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
