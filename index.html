@@ -105,20 +105,6 @@
     <script src="./js/services.js"></script>
     <script type="text/javascript">
 
-    // Webfont
-    WebFontConfig = {
-        google: { families: [ 'Open+Sans::latin' ] }
-    };
-    (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-    })();
-
     // sticky side nav
     $('#sidebar').affix({offset: {top: 120,}});
     var $body = $(document.body);
@@ -144,6 +130,20 @@
     selectorMobileLink.text('');
     selectorMobileLink.addClass('fa');
     selectorMobileLink.addClass('fa-envelope')
+
+    // Webfont
+    WebFontConfig = {
+        google: { families: [ 'Open+Sans::latin' ] }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
     </script>
 
 <script>
