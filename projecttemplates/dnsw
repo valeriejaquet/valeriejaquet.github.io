@@ -1,12 +1,11 @@
 <div>
     <div class="row" style="padding-top:35px;">
-        <div class="col-lg-3 col-sm-4 col-xs-4">
+        <div class="col-lg-3 col-sm-4 col-xs-6" style="padding-bottom:20px;">
             <img src="./media/Destination NSW/DSNW front.jpg" alt="">
         </div>
-        <div class="col-lg-1 col-sm-1 col-xs-1"></div>
-        
-        <div class="col-lg-3 col-sm-4 col-xs-4">
-            <img src="./media/Destination NSW/DSNW back.jpg" alt="" style="margin-left:-50px;">
+        <div class="clearfix visible-xs"></div>
+        <div class="col-lg-5 col-sm-4 col-md-offset-0 col-xs-6">
+            <img src="./media/Destination NSW/DSNW back.jpg" alt="">
         </div>
     </div>
 

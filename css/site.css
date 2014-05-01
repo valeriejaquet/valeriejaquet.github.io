@@ -86,7 +86,7 @@ h1 {
 h5 {font-weight: 600;}
 #filterButton {min-width: 120px;}
 
-#container {width: 100%;}
+#container {width: 100%; padding:0px; margin:0px;}
 
 .header {background-color: #222; margin: 0 auto; height: 120px;}
 
@@ -108,7 +108,8 @@ h5 {font-weight: 600;}
     .contact_mobile a:hover{text-decoration: none; color: #fff;}
     .nav_mobile {text-align: left;}
     #sidebar {display: none;}
-    .Collage {text-align: center;}
+    .rowMobileFix {margin: 0 auto; padding-left: 10px;}
+    .margin-mobile-fix {margin: 0 auto;}
 }
 
 .nav-collapse.collapse {
