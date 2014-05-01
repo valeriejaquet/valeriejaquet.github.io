@@ -104,15 +104,6 @@
     <script src="./js/app.js"></script>
     <script type="text/javascript">
 
-    // sticky side nav
-    $('#sidebar').affix({offset: {top: 120,}});
-    var $body = $(document.body);
-    var navHeight = $('.navbar').outerHeight(true) + 10;
-    $body.scrollspy({
-        target: '#leftCol',
-        offset: navHeight
-    });
-
     var mme = ''
     function agg(i) {
         mme += i;
@@ -147,6 +138,15 @@
 
     $(window).load(function() {
       $('body').fadeIn('slow');
+        
+  // sticky side nav
+    $('#sidebar').affix();
+    var $body = $(document.body);
+    var navHeight = $('.navbar').outerHeight(true) + 10;
+    $body.scrollspy({
+        target: '#leftCol',
+        offset: navHeight
+    });
     });
 
     </script>

@@ -38,13 +38,10 @@ h1 {
 
 @media (min-width: 979px) {
 
-  #leftCol {
-    
-  }
-
   #sidebar.affix-top {
     position: static;
     margin-top:30px;
+
     width: 200px!important;
   }
   
