@@ -1,8 +1,8 @@
 <div>
     <div class="row" style="padding-top: 35px;">
-        <div class="col-lg-4 col-sm-4 col-xs-6"><img src="./media/Gstar/Gstar gutter.jpg" alt=""></div>
-        <div class="col-lg-1 col-sm-2 col-xs-3"></div>
-        <div class="col-lg-4 col-sm-4 col-xs-6"><img src="./media/Gstar/Gstar mrec.jpg" alt=""></div>
+        <div class="col-lg-6 col-sm-6 col-xs-6"><img src="./media/Gstar/Gstar gutter.jpg" alt=""></div>
+        <div class="col-lg-1 col-sm-1 col-xs-1"></div>
+        <div class="col-lg-6 col-sm-6 col-xs-6"><img src="./media/Gstar/Gstar mrec.jpg" alt=""></div>
 
     </div>
     <div class="row" style="padding-bottom:20px;">

@@ -50,6 +50,11 @@ h1 {
     top:70px;
     width: 200px!important;
   }
+  img
+  {
+      max-width: 100%;
+      height: auto;
+  }
 }
 
 @media  only screen and (max-width: 720px) and (orientation: portrait) {
@@ -63,6 +68,12 @@ h1 {
     position: fixed;
     top:70px;
     width:100px;
+  }
+  img
+  {
+      max-width: 100%;
+      min-width: 300px;
+      height: auto;
   }
 }
 

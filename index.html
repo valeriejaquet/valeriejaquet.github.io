@@ -65,7 +65,7 @@
                     </li>
                 </ul>
             </div>  
-            <div class="col-md-10" ng-controller="ContentCtrl">
+            <div class="col-md-10" id="content" ng-controller="ContentCtrl">
 
                 <div ng-view></div>
                 <script type="text/ng-template" id="projectDetails.html">
@@ -136,17 +136,19 @@
         s.parentNode.insertBefore(wf, s);
     })();
 
+
+
     $(window).load(function() {
-      $('body').fadeIn('slow');
-        
-  // sticky side nav
-    $('#sidebar').affix();
-    var $body = $(document.body);
-    var navHeight = $('.navbar').outerHeight(true) + 10;
-    $body.scrollspy({
-        target: '#leftCol',
-        offset: navHeight
-    });
+        $('body').fadeIn('slow');
+
+        // sticky side nav
+        $('#sidebar').affix();
+        var $body = $(document.body);
+        var navHeight = $('.navbar').outerHeight(true) + 10;
+        $body.scrollspy({
+            target: '#leftCol',
+            offset: navHeight
+        });
     });
 
     </script>
