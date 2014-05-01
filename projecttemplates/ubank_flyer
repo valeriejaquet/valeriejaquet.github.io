@@ -1,0 +1,19 @@
+<div>
+    <div class="row" style="padding-top:35px;">
+        <div class="col-lg-2 col-sm-4 col-xs-4">
+            <img src="./media/thumbs/ubank_flyer.jpg" alt="">
+        </div>
+        <div class="col-lg-1 col-sm-4 col-xs-4"></div>
+        <div class="col-lg-2 col-sm-4 col-xs-4" style="margin-left:-50px;">
+            <img src="/media/Ubank/Ubank flyer back.jpg" alt="">
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12" style="padding-top:20px; font-size: 1em; ">
+            <h5 style="padding-left:15px; margin-left:-15px">Agency <small style="font-size:1.1em; color: #333; padding-left:2px;">Mindshare</small></h5>
+            <h5 style="padding-left:15px; margin-left:-15px">Client <small style="font-size:1.1em; color: #333; padding-left:2px;">UBank</small></h5>
+            <h5 style="padding-left:15px; margin-left:-15px">Campaign <small style="font-size:1.1em; color: #333; padding-left:2px;">Direct Response campaign to "Win a year's worth of  repayments towards your home loan"</small></h5>
+        </div>
+    </div>
+</div>

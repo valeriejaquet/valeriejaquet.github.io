@@ -5,22 +5,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Valerie Jaquet - Marketing &amp; Media Sales Professional</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
     <link type="text/css" href="./css/site.css" rel="stylesheet" />
-    <link type="text/css" href="./css/transitions.css" rel="stylesheet" />
 
 </head>
-<body ng-controller="projectListCtrl">
-
+<body ng-controller="projectListCtrl" style="display:none;">
     <div id="container" class="container">
         <div class="header">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-2"></div>
-                    <div class="col-md-7"><h1 style="padding-top: 25px; color: #fff; margin: 0 auto; text-align:center;">valerie jaquet</h1></div>    
+                    <div class="col-md-7 unselectable">
+                        <h1 style="padding-top: 25px; color: #fff; margin: 0 auto; text-align:center;" unselectable="on">valerie jaquet</h1>
+                    </div>    
                     <div class="col-md-2 col-xs-10" style="margin: 0 auto; text-align:center;">
                  
                         <ul class="contact">
@@ -58,36 +58,37 @@
             </div>
         </nav>
         <div class="row">
-            <div class="col-md-2" style="text-align: right;" id="leftCol">
+            <div class="col-md-2 unselectable" style="text-align: right;" id="leftCol">
                 <ul class="nav nav-stacked" id="sidebar"  ng-controller="filterListCtrl">
                     <li ng-repeat="filter in filters">
                         <a ng-click="updateCategory(filter)" ng-href="#{{filter}}">{{filter}}</a>
                     </li>
                 </ul>
             </div>  
-            <div class="col-md-10">
+            <div class="col-md-10" ng-controller="ContentCtrl">
 
                 <div ng-view></div>
-
-                <script type="text/ng-template" id="filter.html">
-                    
-                    <div class="Collage">
-                        <img 
-                        ng-repeat="project in projects | orderBy:selectedCategory.index | projectCategories:selectedCategory.name" 
-                        ng-src="{{ project.thumbnail }}" 
-                        id="{{project.name}}_thumb" 
-                        />
+                <script type="text/ng-template" id="projectDetails.html">
+                    <div id="projectTplContainer" style="display:none">
+                        <ng-include src="'projecttemplates/' + project"></ng-include>
                     </div>
-
                     <script type="text/javascript">
-                        $(document).ready(function () {
-                            $('.Collage').collagePlus({
-                                'effect': 'effect-2',
-                                'allowPartialLastRow': true
-                            });
+                        $(document).ready(function() {
+                          $('#projectTplContainer').fadeIn('slow');
                         });
-                
                     </script>
+                </script>
+                <script type="text/ng-template" id="filter.html">
+                    <div id="photos">
+                        <div ng-repeat="project in projects | orderBy:selectedCategory.index | projectCategories:selectedCategory.name" >
+                            <img 
+                            ng-src="{{ project.thumbnail }}" 
+                            id="{{project.name}}_thumb" 
+                            class="unselectable" 
+                            ng-click="go('/project/' + project.name +'/')"
+                            />
+                        </div>
+                    </div>
                 </script>
             </div>
         </div>
@@ -100,9 +101,7 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="./js/ui-bootstrap-0.9.0.min.js"></script>
     <script src="./js/ui-bootstrap-tpls-0.9.0.min.js"></script>
-
-    <script src="./js/controllers.js"></script>
-    <script src="./js/services.js"></script>
+    <script src="./js/app.js"></script>
     <script type="text/javascript">
 
     // sticky side nav
@@ -135,6 +134,7 @@
     WebFontConfig = {
         google: { families: [ 'Open+Sans::latin' ] }
     };
+
     (function() {
         var wf = document.createElement('script');
         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
@@ -144,6 +144,11 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
     })();
+
+    $(window).load(function() {
+      $('body').fadeIn('slow');
+    });
+
     </script>
 
 <script>
